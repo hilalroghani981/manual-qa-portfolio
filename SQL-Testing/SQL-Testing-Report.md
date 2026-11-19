@@ -18,3 +18,15 @@
 ## Conclusion
 
 All six SQL practice tests passed successfully.
+
+
+## Additional Negative Testing
+
+| Test | Expected | Actual | Status |
+|---|---|---|---|
+| Duplicate Primary Key | Rejected | Rejected | PASS |
+| Duplicate Email | Rejected if unique email is required | Accepted | FAIL |
+
+Finding: The database allows duplicate email addresses.
+
+Recommendation: Add a UNIQUE constraint if the application requires unique emails.
