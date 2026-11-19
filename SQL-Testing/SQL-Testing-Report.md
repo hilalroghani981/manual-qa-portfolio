@@ -30,3 +30,17 @@ All six SQL practice tests passed successfully.
 Finding: The database allows duplicate email addresses.
 
 Recommendation: Add a UNIQUE constraint if the application requires unique emails.
+
+
+## SQL CHECK Constraint Testing
+
+| Test Case | Expected Result | Actual Result | Status |
+|---|---|---|---|
+| Insert valid Active status | Accepted | Accepted | PASS |
+| Insert valid Inactive status | Accepted | Accepted | PASS |
+| Insert invalid Unknown status | Rejected | Rejected | PASS |
+| Verify records after rejection | 2 records | 2 records | PASS |
+
+Finding: The CHECK constraint successfully prevents invalid status values.
+
+Conclusion: Database data integrity was verified successfully.
